@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://yuribarbosa.github.io/Portfolio_yuri_barbosa/",
+  "homepage": "https://yurib4rbosa.github.io/Portfolio_yuri_barbosa/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
