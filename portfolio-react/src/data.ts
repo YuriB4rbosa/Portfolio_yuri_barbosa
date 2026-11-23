@@ -104,6 +104,6 @@ export const certificates: Certificate[] = [
 export const skillGroups: SkillGroup[] = [
   { title: 'Back-end & Dados', skills: ['Python', 'Django', 'PostgreSQL', 'MySQL', 'Pandas', 'PowerBI'] },
   { title: 'Front-end', skills: ['React', 'TypeScript', 'Figma'] },
-  { title: 'Ferramentas', skills: ['Git & GitHub', 'Selenium', 'Clion', 'DataGrip', 'VSCode'] },
+  { title: 'Ferramentas', skills: ['Git & GitHub', 'Selenium', 'CLion', 'DataGrip', 'VSCode'] },
   { title: 'Soft Skills', skills: ['Trabalho em equipe', 'Boa comunicação', 'Observador'] },
 ]
