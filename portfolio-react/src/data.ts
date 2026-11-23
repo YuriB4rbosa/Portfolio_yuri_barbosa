@@ -31,11 +31,6 @@ export const mainExperience: Fact = {
 export const moreExperiences: ExperienceItem[] = [
   {
     title: '+ PRÓXIMA EXPERIÊNCIA',
-    description:
-      'Espaço reservado — Em busca de uma nova experiência!',
-  },
-  {
-    title: '+ PRÓXIMA EXPERIÊNCIA',
     description: 'Espaço reservado — Em busca de uma nova experiência!',
     placeholder: true,
   },
@@ -72,22 +67,10 @@ export const certificates: Certificate[] = [
     href: 'https://udemy-certificate.s3.amazonaws.com/image/UC-a098c2ab-7ecb-4839-84bb-073eefda95e7.jpg',
   },
   {
-    title: 'Universidade Catolica de Brasília — UCB (2000h)',
-    institution: 'Universidade Catolica de Brasília — UCB',
-    date: '05/2026',
-    files: [{ label: 'Certificado', href: cert('certificado_conclusao_ads.pdf') }],
-  },
-  {
     title: 'SQL (Basic) - HackerRank (20h)',
     institution: 'HackerRank',
     date: '08/2026',
     href: 'https://www.hackerrank.com/certificates/cade84fb345d',
-  },
-  {
-    title: 'python (Basic) - Fundação Bradesco (18h)',
-    institution: 'Fundação Bradesco',
-    date: '01/2026',
-    files: [{ label: 'Certificado', href: cert('Python.pdf') }],
   },
   {
     title: 'Fundamentos de Git e GitHub - UCB (20h)',
@@ -99,10 +82,23 @@ export const certificates: Certificate[] = [
       { label: 'Certificado 3', href: cert('Meus_Certificados3.pdf') },
     ],
   },
+  {
+    title: 'Universidade Catolica de Brasília — UCB (2000h)',
+    institution: 'Universidade Catolica de Brasília — UCB',
+    date: '05/2026',
+    files: [{ label: 'Certificado', href: cert('certificado_conclusao_ads.pdf') }],
+  },
+  {
+    title: 'python (Basic) - Fundação Bradesco (18h)',
+    institution: 'Fundação Bradesco',
+    date: '01/2026',
+    files: [{ label: 'Certificado', href: cert('Python.pdf') }],
+  },
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { title: 'Back-end & Dados', skills: ['Python', 'Django', 'PostgreSQL', 'MySQL', 'Pandas', 'PowerBI'] },
+  { title: 'Back-end', skills: ['Python', 'Django', 'Flask', 'APIs REST'] },
+  { title: 'Dados & Análise', skills: ['SQL', 'PostgreSQL', 'MySQL', 'Pandas', 'PowerBI'] },
   { title: 'Front-end', skills: ['React', 'TypeScript', 'Figma'] },
   { title: 'Ferramentas', skills: ['Git & GitHub', 'Selenium', 'CLion', 'DataGrip', 'VSCode'] },
   { title: 'Soft Skills', skills: ['Trabalho em equipe', 'Boa comunicação', 'Observador'] },

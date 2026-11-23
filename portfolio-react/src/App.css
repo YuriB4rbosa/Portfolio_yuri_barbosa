@@ -49,7 +49,6 @@
     font-weight: 600;
     letter-spacing: 0.02em;
   }
-  .logo span{ color: var(--accent); }
   .navlinks{ display:flex; gap: 28px; font-size: 14px; color: var(--ink-soft); }
   .navlinks a{ position:relative; padding: 4px 0; transition: color .2s; }
   .navlinks a:hover{ color: var(--ink); }
@@ -58,6 +57,20 @@
     background: var(--accent); transition: width .25s ease;
   }
   .navlinks a:hover::after{ width:100%; }
+  .navtoggle{
+    display:none; flex-direction:column; justify-content:center; gap:5px; width:40px; height:40px;
+    background:none; border:1px solid var(--line); border-radius:8px; cursor:pointer; padding:0 10px;
+  }
+  .navtoggle span{ display:block; height:2px; background: var(--ink); border-radius:2px; transition: transform .25s ease, opacity .2s ease; }
+  .navtoggle[aria-expanded="true"] span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .navtoggle[aria-expanded="true"] span:nth-child(2){ opacity:0; }
+  .navtoggle[aria-expanded="true"] span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+  .navmobile{
+    display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0;
+    background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 32px 16px;
+  }
+  .navmobile a{ padding: 12px 0; font-size: 15px; color: var(--ink); border-bottom: 1px solid var(--line); }
+  .navmobile a:last-child{ border-bottom:0; }
   .navcta{
     font-family: var(--mono); font-size: 12.5px;
     border: 1px solid var(--ink); padding: 7px 14px; border-radius: 3px;
@@ -283,6 +296,8 @@
     font-family: var(--mono); font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em;
     color: var(--amber); margin: 0 0 16px;
   }
+  .skill-group:last-child{ grid-column: 1 / -1; }
+  .skill-group:last-child .skill-list{ flex-direction:row; flex-wrap:wrap; gap:10px 28px; }
   .skill-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
   .skill-list li{
     font-size: 14.5px; display:flex; align-items:center; gap:10px; color: var(--ink);
@@ -315,6 +330,8 @@
     .skills-grid{ grid-template-columns: 1fr; }
     .cert-grid{ grid-template-columns: 1fr; gap: 22px; }
     .navlinks{ display:none; }
+    .navtoggle{ display:flex; }
+    .navmobile.open{ display:flex; }
     .cert-modal-backdrop{ padding: 8px; }
     .cert-modal-title{ font-size: 15px; }
     #certificados{ margin: 0 16px; padding: 36px 24px; }

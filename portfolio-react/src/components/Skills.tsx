@@ -24,7 +24,7 @@ export default function Skills() {
         <div className="section-head">
           <div>
             <div className="section-label">Skills</div>
-            <h2 className="section-title">Ferramentas que uso</h2>
+            <h2 className="section-title">Tecnologias e competências</h2>
           </div>
         </div>
 
