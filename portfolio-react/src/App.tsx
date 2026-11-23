@@ -2,7 +2,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
-import Focus from './components/Focus'
+import Certificates from './components/Certificates'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -14,7 +14,7 @@ export default function App() {
       <Hero />
       <About />
       <Projects />
-      <Focus />
+      <Certificates />
       <Skills />
       <Contact />
       <Footer />

@@ -10,6 +10,7 @@ export default function Nav() {
         <div className="navlinks">
           <a href="#sobre" onClick={handleSmoothScrollClick}>Sobre</a>
           <a href="#projetos" onClick={handleSmoothScrollClick}>Projetos</a>
+          <a href="#certificados" onClick={handleSmoothScrollClick}>Certificados</a>
           <a href="#skills" onClick={handleSmoothScrollClick}>Skills</a>
           <a href="#contato" onClick={handleSmoothScrollClick}>Contato</a>
         </div>

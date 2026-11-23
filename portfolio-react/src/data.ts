@@ -1,4 +1,4 @@
-import type { Project, Fact, FocusItem, SkillGroup, TerminalLine, ExperienceItem } from './types'
+import type { Project, Fact, Certificate, SkillGroup, TerminalLine, ExperienceItem } from './types'
 
 export const terminalLines: TerminalLine[] = [
   { text: '$ whoami', kind: 'prompt' },
@@ -61,26 +61,48 @@ export const projects: Project[] = [
   
 ]
 
-export const focusItems: FocusItem[] = [
+// Os arquivos ficam em public/certificados/
+const cert = (file: string) => `${import.meta.env.BASE_URL}certificados/${file}`
+
+export const certificates: Certificate[] = [
   {
-    tag: 'Python do zero ao avançado Udemy',
-    title: 'Python',
-    description: 'Python – PySide6, Django, Selenium, Regexp, Testes, TDD, POO, Design Patterns GoF, algoritmos e programação (140h)',
+    title: 'Python do zero ao avançado (141.5h)',
+    institution: 'Udemy',
+    date: '11/2026',
+    href: 'https://udemy-certificate.s3.amazonaws.com/image/UC-a098c2ab-7ecb-4839-84bb-073eefda95e7.jpg',
   },
   {
-    tag: 'Python Fundação Bradesco',
-    title: 'Python',
-    description: 'LINGUAGEM DE PROGRAMAÇÃO PYTHON - BÁSICO (20h)',
+    title: 'Universidade Catolica de Brasília — UCB (2000h)',
+    institution: 'Universidade Catolica de Brasília — UCB',
+    date: '05/2026',
+    files: [{ label: 'Certificado', href: cert('certificado_conclusao_ads.pdf') }],
   },
   {
-    tag: 'Git e GitHub TIC em Trilhas',
-    title: 'Fundamentos de Git',
-    description: 'Fundamentos de Git e GitHub do tic em trilhas pela UCB (20h)',
+    title: 'SQL (Basic) - HackerRank (20h)',
+    institution: 'HackerRank',
+    date: '08/2026',
+    href: 'https://www.hackerrank.com/certificates/cade84fb345d',
+  },
+  {
+    title: 'python (Basic) - Fundação Bradesco (18h)',
+    institution: 'Fundação Bradesco',
+    date: '01/2026',
+    files: [{ label: 'Certificado', href: cert('Python.pdf') }],
+  },
+  {
+    title: 'Fundamentos de Git e GitHub - UCB (20h)',
+    institution: 'TIC em Trilhas — UCB',
+    date: '08/2026',
+    files: [
+      { label: 'Certificado 1', href: cert('Meus_Certificados1.pdf') },
+      { label: 'Certificado 2', href: cert('Meus_Certificados2.pdf') },
+      { label: 'Certificado 3', href: cert('Meus_Certificados3.pdf') },
+    ],
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { title: 'Back-end & Dados', skills: ['Python', 'Django', 'PostgreSQL', 'MySQL', 'Pandas'] },
+  { title: 'Back-end & Dados', skills: ['Python', 'Django', 'PostgreSQL', 'MySQL', 'Pandas', 'PowerBI'] },
   { title: 'Front-end', skills: ['React', 'TypeScript', 'Figma'] },
   { title: 'Ferramentas', skills: ['Git & GitHub', 'Selenium', 'Clion', 'DataGrip', 'VSCode'] },
   { title: 'Soft Skills', skills: ['Trabalho em equipe', 'Boa comunicação', 'Observador'] },

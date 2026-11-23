@@ -17,10 +17,19 @@ export interface ExperienceItem {
   placeholder?: boolean
 }
 
-export interface FocusItem {
-  tag: string
+export interface CertificateFile {
+  label: string
+  href: string
+}
+
+export interface Certificate {
   title: string
-  description: string
+  institution: string
+  date: string
+  /** Link externo: abre em nova aba */
+  href?: string
+  /** Arquivos locais (PDF/imagem): abrem no modal, com abas se houver mais de um */
+  files?: CertificateFile[]
 }
 
 export interface SkillGroup {

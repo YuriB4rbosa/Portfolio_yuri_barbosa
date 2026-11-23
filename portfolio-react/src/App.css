@@ -230,19 +230,54 @@
   }
   .card-link:hover{ color: var(--accent); }
 
-  /* ---------- FOCO ATUAL ---------- */
-  #foco{ background: var(--ink); color: var(--bg); border-radius: 14px; margin: 0 32px; padding: 48px 40px; max-width: calc(var(--maxw) - 64px); margin-left:auto; margin-right:auto;}
-  #foco .section-label{ color: #8FB1E0; }
-  #foco .section-head{ border-color: rgba(255,255,255,0.14); }
-  #foco h2.section-title{ color: var(--bg); }
-  .foco-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  .foco-item{ border-left: 1px solid rgba(255,255,255,0.18); padding-left: 18px; }
-  .foco-item .foco-tag{ font-family: var(--mono); font-size: 11.5px; color: #8FB1E0; text-transform: uppercase; letter-spacing: .05em;}
-  .foco-item h4{ font-family: var(--serif); font-size: 18px; margin: 8px 0 8px; font-weight: 600; }
-  .foco-item p{ font-size: 13.5px; color: #B7BFCC; margin:0; }
+  /* ---------- CERTIFICADOS ---------- */
+  #certificados{ background: var(--ink); color: var(--bg); border-radius: 14px; margin: 0 32px; padding: 48px 40px; max-width: calc(var(--maxw) - 64px); margin-left:auto; margin-right:auto;}
+  #certificados .section-label{ color: #8FB1E0; }
+  #certificados .section-head{ border-color: rgba(255,255,255,0.14); }
+  #certificados h2.section-title{ color: var(--bg); }
+  .cert-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .cert-item{ border-left: 1px solid rgba(255,255,255,0.18); padding-left: 18px; display:flex; flex-direction:column; }
+  .cert-institution{ font-family: var(--mono); font-size: 11.5px; color: #8FB1E0; text-transform: uppercase; letter-spacing: .05em;}
+  .cert-item h4{ font-family: var(--serif); font-size: 18px; margin: 8px 0 8px; font-weight: 600; flex-grow:1; }
+  .cert-date{ font-family: var(--mono); font-size: 12px; color: #B7BFCC; margin-bottom: 12px; }
+  .cert-link{ background:none; border:0; border-bottom: 1px solid rgba(255,255,255,0.3); cursor:pointer; padding:0 0 2px; font-family: var(--mono); font-size: 12.5px; color: var(--bg); align-self:flex-start; transition: color .2s ease, border-color .2s ease; }
+  .cert-link:hover{ color: #8FB1E0; border-color: #8FB1E0; }
+
+
+  .cert-modal-backdrop{
+    position: fixed; inset: 0; z-index: 100; background: rgba(22,27,34,0.72);
+    display:flex; align-items:center; justify-content:center; padding: 24px;
+  }
+  .cert-modal{
+    background: var(--panel); border-radius: 12px; width: min(960px, 100%); height: min(88vh, 900px);
+    display:flex; flex-direction:column; overflow:hidden; box-shadow: 0 30px 80px -20px rgba(0,0,0,0.5);
+  }
+  .cert-modal-head{
+    display:flex; justify-content:space-between; align-items:center; gap:16px;
+    padding: 14px 20px; border-bottom: 1px solid var(--line);
+  }
+  .cert-modal-head .cert-institution{ color: var(--accent); }
+  .cert-modal-title{ font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); }
+  .cert-modal-actions{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
+  .cert-modal-actions a{ font-family: var(--mono); font-size: 12.5px; color: var(--accent); }
+  .cert-modal-actions a:hover{ text-decoration: underline; }
+  .cert-modal-actions button{
+    background: var(--bg-alt); border: 1px solid var(--line); border-radius: 6px;
+    width: 32px; height: 32px; cursor:pointer; color: var(--ink); font-size: 14px;
+  }
+  .cert-modal-actions button:hover{ background: var(--accent-soft); }
+  .cert-tabs{ display:flex; gap:8px; padding: 10px 20px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  .cert-tabs button{
+    font-family: var(--mono); font-size: 12px; padding: 6px 12px; border-radius: 6px; cursor:pointer;
+    border: 1px solid var(--line); background: var(--bg-alt); color: var(--ink-soft);
+  }
+  .cert-tabs button.active{ background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .cert-modal-body{ flex:1; min-height:0; background: var(--bg-alt); display:flex; }
+  .cert-modal-body iframe{ width:100%; height:100%; border:0; }
+  .cert-modal-body img{ max-width:100%; max-height:100%; margin:auto; object-fit:contain; }
 
   /* ---------- SKILLS ---------- */
-  .skills-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .skills-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
   .skill-group{ border: 1px solid var(--line); border-radius: 10px; padding: 24px; background: var(--panel); }
   .skill-group h4{
     font-family: var(--mono); font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em;
@@ -278,9 +313,11 @@
     .sobre-grid{ grid-template-columns: 1fr; }
     .projects{ grid-template-columns: 1fr; }
     .skills-grid{ grid-template-columns: 1fr; }
-    .foco-grid{ grid-template-columns: 1fr; gap: 22px; }
+    .cert-grid{ grid-template-columns: 1fr; gap: 22px; }
     .navlinks{ display:none; }
-    #foco{ margin: 0 16px; padding: 36px 24px; }
+    .cert-modal-backdrop{ padding: 8px; }
+    .cert-modal-title{ font-size: 15px; }
+    #certificados{ margin: 0 16px; padding: 36px 24px; }
   }
 
   @media (prefers-reduced-motion: reduce){
