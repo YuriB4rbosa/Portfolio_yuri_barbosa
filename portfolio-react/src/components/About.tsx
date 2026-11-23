@@ -31,7 +31,7 @@ export default function About() {
               caminho, venho construindo projetos próprios em Python.
             </p>
             <p>
-              Hoje meu foco é Análise de Dados: Python,SQL e PowerBI.
+              Hoje meu foco é Análise de Dados: Python, SQL e PowerBI.
             </p>
           </div>
 

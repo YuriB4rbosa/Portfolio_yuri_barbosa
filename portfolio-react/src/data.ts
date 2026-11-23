@@ -13,7 +13,7 @@ export const terminalLines: TerminalLine[] = [
 ]
 
 export const factsBeforeExperience: Fact[] = [
-  { label: 'FORMAÇÃO', value: 'Eng. de Software — UCB (início ago/2026)' },
+  { label: 'FORMAÇÃO', value: 'Eng. de Software — UCB (cursando desde ago/2026)' },
   { label: 'ANTERIOR', value: 'Análise e Desenvolvimento de Sistemas — UCB' },
 ]
 
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: 'Gym Manager API',
     description:
       'Curso técnico de desenvolvedor de sistemas. API REST para gestão de academias — cadastro de alunos, planos e treinos, estruturada com boas práticas de back-end.',
-    tags: ['Python', 'REST', 'SQlite', 'Flask'],
+    tags: ['Python', 'REST', 'SQLite', 'Flask'],
     href: 'https://gym-manager-api-8lp9.onrender.com/',
   },
   
