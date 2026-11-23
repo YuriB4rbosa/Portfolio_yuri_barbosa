@@ -18,6 +18,14 @@ npm run build
 npm run preview
 ```
 
+## Deploy (GitHub Pages)
+
+```bash
+npm run deploy   # roda o build e publica dist/ na branch gh-pages
+```
+
+O `base` em `vite.config.ts` deve ser `/Portfolio_yuri_barbosa/`.
+
 ## Estrutura
 
 ```
@@ -37,7 +45,7 @@ src/
     Contact.tsx
     Footer.tsx
   App.tsx
-  App.css               # estilos (mesma identidade visual da versão HTML)
+  App.css               # estilos 
 ```
 
 Para editar o conteúdo (projetos, skills, links de contato), basta alterar `src/data.ts` —

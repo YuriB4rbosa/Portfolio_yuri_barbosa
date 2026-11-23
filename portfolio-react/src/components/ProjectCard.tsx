@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
       <a className="card-link" href={project.href} target="_blank" rel="noopener noreferrer">
-        Ver repositório ↗
+        Ver projeto ↗
       </a>
     </div>
   )
