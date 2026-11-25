@@ -5,8 +5,8 @@ export default function Contact() {
         <div className="eyebrow">Contato</div>
         <h2 className="contact-title">Vamos conversar sobre a próxima oportunidade?</h2>
         <p className="contact-sub">
-          Estou em busca de posições como desenvolvedor Python / back-end. Se meu perfil combina com o que
-          você procura, entre em contato.
+          Estou em busca de oportunidades em análise de dados, com Python, SQL e PowerBI, ou como
+          desenvolvedor Python / back-end. Se meu perfil combina com o que você procura, entre em contato.
         </p>
         <div className="contact-links">
           <a className="btn btn-primary" href="mailto:yuri.damico18@gmail.com">

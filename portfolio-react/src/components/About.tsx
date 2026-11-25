@@ -33,6 +33,11 @@ export default function About() {
             <p>
               Hoje meu foco é Análise de Dados: Python, SQL e PowerBI.
             </p>
+            <p>
+              Busco uma oportunidade como <strong>desenvolvedor Python / back-end</strong> ou na área de
+              dados. Gosto de construir APIs com regras de negócio claras, testes e documentação — e de
+              transformar dados em informação útil.
+            </p>
           </div>
 
           <div className="facts reveal" ref={factsRef}>

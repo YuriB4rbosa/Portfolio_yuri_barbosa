@@ -8,7 +8,7 @@ export default function Hero() {
       <div>
         <div className="eyebrow">Brasília, DF · Disponível para oportunidades</div>
         <h1 className="hero-title">
-          Desenvolvedor <em>Python</em>.
+          Python &amp; <em>Dados</em>.
         </h1>
         <p className="hero-sub">
           Estudante de Engenharia de Software, focado em Análise de Dados — com Python, SQL e PowerBI.

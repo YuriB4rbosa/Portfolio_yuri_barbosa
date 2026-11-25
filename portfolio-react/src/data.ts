@@ -18,7 +18,7 @@ export const factsBeforeExperience: Fact[] = [
 ]
 
 export const factsAfterExperience: Fact[] = [
-  { label: 'FOCO ATUAL', value: 'Python · Back-end · Bancos de dados · PowerBI' },
+  { label: 'FOCO ATUAL', value: 'Análise de dados · Python · SQL · PowerBI' },
   { label: 'LOCALIZAÇÃO', value: 'Brasília, DF — Brasil' },
   { label: 'GITHUB', value: 'github.com/YuriB4rbosa' },
 ]
@@ -114,8 +114,8 @@ export const certificates: Certificate[] = [
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { title: 'Back-end', skills: ['Python', 'Django', 'Flask', 'APIs REST'] },
   { title: 'Dados & Análise', skills: ['SQL', 'PostgreSQL', 'MySQL', 'Pandas', 'PowerBI'] },
+  { title: 'Back-end', skills: ['Python', 'Django', 'Flask', 'APIs REST'] },
   { title: 'Front-end', skills: ['React', 'TypeScript', 'Figma'] },
   { title: 'Ferramentas', skills: ['Git & GitHub', 'Selenium', 'CLion', 'DataGrip', 'VSCode'] },
   { title: 'Soft Skills', skills: ['Trabalho em equipe', 'Boa comunicação', 'Observador'] },
