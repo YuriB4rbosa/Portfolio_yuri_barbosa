@@ -53,7 +53,14 @@ export const projects: Project[] = [
     tags: ['Python', 'REST', 'SQLite', 'Flask'],
     href: 'https://gym-manager-api-8lp9.onrender.com/',
   },
-  
+  {
+    index: '03',
+    title: 'Scheduler API',
+    description:
+      'API REST de agendamento para pequenos negócios, que impede sobreposição de horários. Autenticação JWT, Swagger, testes e CI.',
+    tags: ['Python', 'Flask', 'PostgreSQL', 'Docker'],
+    href: 'https://github.com/YuriB4rbosa/scheduler-api',
+  },
 ]
 
 // Os arquivos ficam em public/certificados/
