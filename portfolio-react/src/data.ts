@@ -36,6 +36,10 @@ export const moreExperiences: ExperienceItem[] = [
   },
 ]
 
+
+// Capturas ficam em public/projetos/
+const shot = (file: string) => `${import.meta.env.BASE_URL}projetos/${file}`
+
 export const projects: Project[] = [
   {
     index: '01',
@@ -44,6 +48,8 @@ export const projects: Project[] = [
       'Aplicação para criação e acompanhamento de hábitos diários, com foco em consistência e visualização de progresso ao longo do tempo.',
     tags: ['Python', 'React', 'PostgreSQL'],
     href: 'https://habitstack-web.vercel.app/login',
+    repo: 'https://github.com/YuriB4rbosa/Sistema-de-Rotina',
+    image: shot('habitstack.jpg'),
   },
   {
     index: '02',
@@ -52,6 +58,8 @@ export const projects: Project[] = [
       'Curso técnico de desenvolvedor de sistemas. API REST para gestão de academias — cadastro de alunos, planos e treinos, estruturada com boas práticas de back-end.',
     tags: ['Python', 'REST', 'SQLite', 'Flask'],
     href: 'https://gym-manager-api-8lp9.onrender.com/',
+    repo: 'https://github.com/YuriB4rbosa/Gym-Manager-API',
+    image: shot('gym-manager.jpg'),
   },
   {
     index: '03',
@@ -59,7 +67,9 @@ export const projects: Project[] = [
     description:
       'API REST de agendamento para pequenos negócios, que impede sobreposição de horários. Autenticação JWT, Swagger, testes e CI.',
     tags: ['Python', 'Flask', 'PostgreSQL', 'Docker'],
-    href: 'https://github.com/YuriB4rbosa/scheduler-api',
+    href: 'https://scheduler-api-3mdo.onrender.com/docs',
+    repo: 'https://github.com/YuriB4rbosa/scheduler-api',
+    image: shot('scheduler-api.jpg'),
   },
 ]
 

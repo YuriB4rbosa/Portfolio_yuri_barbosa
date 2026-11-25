@@ -3,7 +3,12 @@ export interface Project {
   title: string
   description: string
   tags: string[]
+  /** Link da demonstração ao vivo */
   href: string
+  /** Link do repositório (opcional) */
+  repo?: string
+  /** Captura de tela em public/projetos/ (opcional) */
+  image?: string
 }
 
 export interface Fact {

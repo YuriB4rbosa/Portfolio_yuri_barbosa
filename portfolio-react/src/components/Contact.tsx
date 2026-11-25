@@ -9,7 +9,17 @@ export default function Contact() {
           você procura, entre em contato.
         </p>
         <div className="contact-links">
-          
+          <a className="btn btn-primary" href="mailto:yuri.damico18@gmail.com">
+            E-mail
+          </a>
+          <a
+            className="btn btn-ghost"
+            href={`${import.meta.env.BASE_URL}Curriculo_Yuri_Barbosa.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Currículo (PDF) ↗
+          </a>
           <a className="btn btn-ghost" href="https://github.com/YuriB4rbosa" target="_blank" rel="noopener noreferrer">
             GitHub ↗
           </a>
